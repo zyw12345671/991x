@@ -1,0 +1,366 @@
+{
+  "groups": [
+    {
+      "title": "常用网站",
+      "items": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/",
+          "desc": "开源项目与代码托管平台",
+          "enabled": true
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/",
+          "desc": "Web 标准与前端开发文档",
+          "enabled": true
+        },
+        {
+          "name": "腾讯云",
+          "url": "https://cloud.tencent.com/",
+          "desc": "腾讯云平台",
+          "enabled": true
+        },
+        {
+          "name": "Wikipedia",
+          "url": "https://www.wikipedia.org/",
+          "desc": "开放知识百科",
+          "enabled": true
+        },
+        {
+          "name": "Google",
+          "url": "https://www.google.com/",
+          "desc": "谷歌搜索",
+          "enabled": true
+        },
+        {
+          "name": "Cloudflare",
+          "url": "https://dash.cloudflare.com/",
+          "desc": "全球云服务提供商",
+          "enabled": true
+        },
+        {
+          "name": "Netlify",
+          "url": "https://app.netlify.com/",
+          "desc": "静态网站托管平台",
+          "enabled": true
+        },
+        {
+          "name": "Bilibili",
+          "url": "https://www.bilibili.com/",
+          "desc": "综合视频与知识分享平台",
+          "enabled": true
+        },
+        {
+          "name": "hao123",
+          "url": "https://www.hao123.com/",
+          "desc": "网址导航平台",
+          "enabled": true
+        },
+        {
+          "name": "必应",
+          "url": "https://www.bing.com/",
+          "desc": "Microsoft Bing",
+          "enabled": true
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/",
+          "desc": "视频检索与学习内容平台",
+          "enabled": true
+        },
+        {
+          "name": "Supabase",
+          "url": "https://supabase.com/",
+          "desc": "开源的后端即服务平台",
+          "enabled": true
+        },
+        {
+          "name": "抖音",
+          "url": "https://www.douyin.com/",
+          "desc": "短视频平台",
+          "enabled": true
+        },
+        {
+          "name": "中国大学MOOC",
+          "url": "https://www.icourse163.org/",
+          "desc": "优质在线课程学习平台",
+          "enabled": true
+        },
+        {
+          "name": "网易公开课",
+          "url": "https://open.163.com/",
+          "desc": "免费在线教育平台",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "title": "人工智能",
+      "items": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/",
+          "desc": "通用人工智能产品与研究",
+          "enabled": true
+        },
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/",
+          "desc": "模型与数据集社区",
+          "enabled": true
+        },
+        {
+          "name": "Kaggle",
+          "url": "https://www.kaggle.com/",
+          "desc": "数据科学竞赛与数据集平台",
+          "enabled": true
+        },
+        {
+          "name": "Civitai",
+          "url": "https://civitai.com/",
+          "desc": "生成模型社区与资源",
+          "enabled": true
+        },
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com/",
+          "desc": "大模型产品与研究",
+          "enabled": true
+        },
+        {
+          "name": "Google AI Studio",
+          "url": "https://aistudio.google.com/",
+          "desc": "Gemini 应用开发平台",
+          "enabled": true
+        },
+        {
+          "name": "Perplexity",
+          "url": "https://www.perplexity.ai/",
+          "desc": "AI 搜索与问答平台",
+          "enabled": true
+        },
+        {
+          "name": "Replicate",
+          "url": "https://replicate.com/",
+          "desc": "在线运行与部署模型",
+          "enabled": true
+        },
+        {
+          "name": "DeepSeek",
+          "url": "https://www.deepseek.com/",
+          "desc": "深度求索",
+          "enabled": true
+        },
+        {
+          "name": "Z智谱",
+          "url": "https://www.zhipuai.cn/",
+          "desc": "智谱清言",
+          "enabled": true
+        },
+        {
+          "name": "Kimi AI",
+          "url": "https://www.kimi.com/",
+          "desc": "月之暗面",
+          "enabled": true
+        },
+        {
+          "name": "通义",
+          "url": "https://tongyi.aliyun.com/",
+          "desc": "阿里通义",
+          "enabled": true
+        },
+        {
+          "name": "MiniMax",
+          "url": "https://minimaxi.com/",
+          "desc": "MiniMax",
+          "enabled": true
+        },
+        {
+          "name": "模力方舟Gitee AI",
+          "url": "https://ai.gitee.com/",
+          "desc": "一站式AI大模型应用平台",
+          "enabled": true
+        },
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/",
+          "desc": "AI模型聚合平台",
+          "enabled": true
+        },
+        {
+          "name": "Ollama",
+          "url": "https://ollama.com/",
+          "desc": "开源跨平台大模型工具",
+          "enabled": true
+        },
+        {
+          "name": "NavyAI",
+          "url": "https://api.navy/",
+          "desc": "AI 模型训练平台",
+          "enabled": true
+        },
+        {
+          "name": "NVIDIA",
+          "url": "https://build.nvidia.com/",
+          "desc": "全栈加速计算平台",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "title": "实用工具",
+      "items": [
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com/",
+          "desc": "在线设计与视觉内容制作",
+          "enabled": true
+        },
+        {
+          "name": "Figma",
+          "url": "https://www.figma.com/",
+          "desc": "界面设计与协作原型",
+          "enabled": true
+        },
+        {
+          "name": "Notion",
+          "url": "https://www.notion.so/",
+          "desc": "文档、知识库与任务管理",
+          "enabled": true
+        },
+        {
+          "name": "Excalidraw",
+          "url": "https://excalidraw.com/",
+          "desc": "手绘风格在线白板",
+          "enabled": true
+        },
+        {
+          "name": "DeepL",
+          "url": "https://www.deepl.com/",
+          "desc": "高质量在线翻译服务",
+          "enabled": true
+        },
+        {
+          "name": "TinyPNG",
+          "url": "https://tinypng.com/",
+          "desc": "图片压缩与体积优化",
+          "enabled": true
+        },
+        {
+          "name": "Remove.bg",
+          "url": "https://www.remove.bg/",
+          "desc": "AI 一键抠图工具",
+          "enabled": true
+        },
+        {
+          "name": "PDF24",
+          "url": "https://tools.pdf24.org/",
+          "desc": "PDF 合并转换工具集",
+          "enabled": true
+        },
+        {
+          "name": "iloveimg",
+          "url": "https://www.iloveimg.com/",
+          "desc": "图片裁剪压缩与格式转换",
+          "enabled": true
+        },
+        {
+          "name": "Google Translate",
+          "url": "https://translate.google.com/",
+          "desc": "在线多语翻译工具",
+          "enabled": true
+        },
+        {
+          "name": "Speedtest",
+          "url": "https://www.speedtest.net/",
+          "desc": "网络速度测试工具",
+          "enabled": true
+        },
+        {
+          "name": "LocalSend",
+          "url": "https://web.localsend.org/",
+          "desc": "跨平台文件互传工具",
+          "enabled": true
+        },
+        {
+          "name": "mineru",
+          "url": "https://mineru.net/",
+          "desc": "文档解析工具",
+          "enabled": true
+        },
+        {
+          "name": "CompressVideo",
+          "url": "https://compressvideo.org/",
+          "desc": "视频压缩工具",
+          "enabled": true
+        },
+        {
+          "name": "FreeConvert",
+          "url": "https://www.freeconvert.com/",
+          "desc": "文件转换器",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "title": "社区论坛",
+      "items": [
+        {
+          "name": "V2EX",
+          "url": "https://www.v2ex.com/",
+          "desc": "技术与产品讨论社区",
+          "enabled": true
+        },
+        {
+          "name": "掘金",
+          "url": "https://juejin.cn/",
+          "desc": "中文开发者社区",
+          "enabled": true
+        },
+        {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/",
+          "desc": "全球话题讨论社区",
+          "enabled": true
+        },
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com/",
+          "desc": "技术创业与新闻讨论",
+          "enabled": true
+        },
+        {
+          "name": "Product Hunt",
+          "url": "https://www.producthunt.com/",
+          "desc": "新产品发布与讨论社区",
+          "enabled": true
+        },
+        {
+          "name": "Dev.to",
+          "url": "https://dev.to/",
+          "desc": "国际开发者技术社区",
+          "enabled": true
+        },
+        {
+          "name": "SegmentFault",
+          "url": "https://segmentfault.com/",
+          "desc": "中文技术问答社区",
+          "enabled": true
+        },
+        {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/",
+          "desc": "程序员问答社区",
+          "enabled": true
+        },
+        {
+          "name": "CSDN",
+          "url": "https://www.csdn.net/",
+          "desc": "开发者内容与交流平台",
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1576 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>991X</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/Favicon_32x32_32x32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./icons/Favicon_64x64_64x64.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="./icons/Favicon_128x128_128x128.png" />
+    <link rel="stylesheet" href="./node_modules/katex/dist/katex.min.css" />
+    <link rel="stylesheet" href="./node_modules/@highlightjs/cdn-assets/styles/github.min.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260315-6" />
+  </head>
+  <body data-theme="light" data-bg="flow-gradient">
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <a class="brand" href="#" aria-label="991X Home">
+            <span class="logo-wrap">
+              <img
+                class="logo-image"
+                src="./icons/Favicon_128x128_128x128.png"
+                alt="991X"
+                width="128"
+                height="128"
+              />
+            </span>
+            <span class="brand-text">991X</span>
+          </a>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="主菜单">
+          <button class="menu-item is-active" id="menuSearchButton" title="搜索" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20 16.5 16.5" /></svg>
+            </span>
+            <span class="menu-label">搜索</span>
+          </button>
+          <button class="menu-item" id="menuInternalButton" title="站内" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M8 9h8M8 13h8M8 17h5" /></svg>
+            </span>
+            <span class="menu-label">站内</span>
+          </button>
+          <button class="menu-item" id="menuRecommendButton" title="推荐" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.2 5.7.8-4.1 4 1 5.7L12 16l-5.2 2.7 1-5.7-4.1-4 5.7-.8Z" /></svg>
+            </span>
+            <span class="menu-label">推荐</span>
+          </button>
+          <button class="menu-item" id="menuTutorialButton" title="分享" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5 12 3l9 4.5-9 4.5-9-4.5Z" /><path d="M3 12.5 12 17l9-4.5" /><path d="M3 17 12 21l9-4" /></svg>
+            </span>
+            <span class="menu-label">分享</span>
+          </button>
+          <button class="menu-item" id="menuWebsiteButton" title="网站" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" /><path d="M4 9h16" /><circle cx="8" cy="7" r="1" /><circle cx="11" cy="7" r="1" /></svg>
+            </span>
+            <span class="menu-label">网站</span>
+          </button>
+          <button class="menu-item" id="menuFavoritesButton" title="收藏" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1" /><path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 0 1-7-7l1-1" /></svg>
+            </span>
+            <span class="menu-label">收藏</span>
+          </button>
+          <button class="menu-item" id="menuVaultButton" title="密盒" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2" /><circle cx="12" cy="12" r="2.5" /><path d="M12 9.5v5" /></svg>
+            </span>
+            <span class="menu-label">密盒</span>
+          </button>
+          <button class="menu-item" id="menuNotesButton" title="图床" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2" /><path d="M9 8h6M9 12h6M9 16h4" /></svg>
+            </span>
+            <span class="menu-label">图床</span>
+          </button>
+          <button class="menu-item" id="menuTasksButton" title="任务" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 12 22Z" /><path d="M18 16v-5a6 6 0 1 0-12 0v5l-2 2h16Z" /></svg>
+            </span>
+            <span class="menu-label">任务</span>
+          </button>
+          <button class="menu-item" id="menuLocalButton" title="本地" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5" /><rect x="13" y="4" width="7" height="7" rx="1.5" /><rect x="4" y="13" width="7" height="7" rx="1.5" /><rect x="13" y="13" width="7" height="7" rx="1.5" /></svg>
+            </span>
+            <span class="menu-label">本地</span>
+          </button>
+          <button class="menu-item" id="menuAiButton" title="AI助手" type="button">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="7" width="12" height="10" rx="3" /><path d="M9 11h6M9 14h4M12 4v3M4 12h2M18 12h2" /></svg>
+            </span>
+            <span class="menu-label">AI助手</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="utility-item" id="themeToggle" title="浅色/深色">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 1 0 9.8 9.8Z" /></svg>
+            </span>
+            <span class="menu-label">深色</span>
+          </button>
+          <button class="utility-item" id="backgroundToggle" title="背景">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3Z" /><path d="m7 15 3-3 3 3 4-4 3 3" /></svg>
+            </span>
+            <span class="menu-label">背景</span>
+          </button>
+          <button class="utility-item" id="collapseToggle" title="收起侧栏">
+            <span class="menu-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+            </span>
+            <span class="menu-label" id="collapseText">收起</span>
+          </button>
+        </div>
+      </aside>
+
+      <div class="main-area">
+        <header class="topbar">
+          <div class="topbar-left">
+            <div class="headline">
+              <h1 id="topbarTitle">一站式个人工作台</h1>
+              <p id="topbarSubtitle">结合网络、本地，方便快捷；本地注册、登录，安全高效</p>
+            </div>
+          </div>
+          <div class="topbar-right">
+            <section class="view-search-toolbar topbar-view-search" id="internalSearchBar" aria-label="站内应用搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="internalSearchInput" type="search" placeholder="搜索应用名称、说明或链接" />
+                <button id="internalSearchClear" type="button">清空</button>
+              </div>
+              <p class="view-search-meta" id="internalSearchMeta">共 0 条内容</p>
+            </section>
+            <section class="view-search-toolbar topbar-view-search" id="recommendSearchBar" aria-label="站长推荐搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="recommendSearchInput" type="search" placeholder="搜索推荐名称、说明或链接" />
+                <button id="recommendSearchClear" type="button">清空</button>
+              </div>
+              <p class="view-search-meta" id="recommendSearchMeta">共 0 条内容</p>
+            </section>
+            <section class="local-transfer-toolbar" id="localTransferToolbar" aria-label="本地快捷导入导出" hidden>
+              <button
+                class="top-chip top-chip-icon local-transfer-btn"
+                id="localExportButton"
+                type="button"
+                aria-label="导出JSON"
+                data-label="导出JSON"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10" /><path d="m8.5 10.5 3.5 3.5 3.5-3.5" /><path d="M4.5 17.5h15" /><path d="M5 20h14" /></svg>
+              </button>
+              <button
+                class="top-chip top-chip-icon local-transfer-btn"
+                id="localImportButton"
+                type="button"
+                aria-label="导入JSON"
+                data-label="导入JSON"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V10" /><path d="m15.5 13.5-3.5-3.5-3.5 3.5" /><path d="M4.5 6.5h15" /><path d="M5 4h14" /></svg>
+              </button>
+              <input id="localImportFileInput" type="file" accept=".json,application/json" hidden />
+            </section>
+            <section class="view-search-toolbar topbar-view-search" id="localSearchBar" aria-label="本地快捷搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="localSearchInput" type="search" placeholder="搜索应用名称、文件名称或路径" />
+                <button id="localSearchClear" type="button">清空</button>
+              </div>
+              <p class="view-search-meta" id="localSearchMeta">共 0 条快捷项</p>
+            </section>
+            <section class="view-search-toolbar topbar-view-search topbar-tasks-search" id="tasksSearchBar" aria-label="任务计划搜索" hidden>
+              <div class="view-search-input-wrap">
+                <div class="tasks-search-transfer" role="group" aria-label="任务计划导入导出">
+                  <button
+                    class="tasks-search-action"
+                    id="tasksExportButton"
+                    type="button"
+                    aria-label="导出任务计划"
+                    data-label="导出"
+                    title="导出"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10" /><path d="m8.5 10.5 3.5 3.5 3.5-3.5" /><path d="M4.5 17.5h15" /><path d="M5 20h14" /></svg>
+                  </button>
+                  <button
+                    class="tasks-search-action"
+                    id="tasksImportButton"
+                    type="button"
+                    aria-label="导入任务计划"
+                    data-label="导入"
+                    title="导入"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V10" /><path d="m15.5 13.5-3.5-3.5-3.5 3.5" /><path d="M4.5 6.5h15" /><path d="M5 4h14" /></svg>
+                  </button>
+                  <button
+                    class="tasks-search-action"
+                    id="tasksImportUndoButton"
+                    type="button"
+                    aria-label="撤销上次导入"
+                    data-label="撤销导入"
+                    title="撤销上次导入"
+                    disabled
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8H4v4" /><path d="M4 12a8 8 0 1 0 2.35-5.65L4 8" /><path d="M12 9v4l2.5 1.5" /></svg>
+                  </button>
+                  <input id="tasksImportInput" type="file" accept=".json,application/json" hidden />
+                </div>
+                <input id="tasksSearchInput" type="search" placeholder="关键词（标题、说明）" />
+                <button id="tasksSearchClear" type="button">清空</button>
+                <div class="tasks-search-nav" id="tasksSearchNav" role="group" aria-label="搜索结果导航" hidden>
+                  <button id="tasksSearchPrevButton" type="button" aria-label="上一个匹配" title="上一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg>
+                  </button>
+                  <button id="tasksSearchNextButton" type="button" aria-label="下一个匹配" title="下一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <p class="view-search-meta" id="tasksSearchMeta">匹配 0 条（总计 0 条）</p>
+            </section>
+            <section class="view-search-toolbar topbar-view-search topbar-tasks-search topbar-ai-search" id="aiSearchBar" aria-label="AI对话搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="aiSearchInput" type="search" placeholder="搜索内容、日期或时间" />
+                <button id="aiSearchClear" type="button">清空</button>
+                <div class="tasks-search-nav" id="aiSearchNav" role="group" aria-label="AI搜索结果导航" hidden>
+                  <button id="aiSearchPrevButton" type="button" aria-label="上一个匹配" title="上一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg>
+                  </button>
+                  <button id="aiSearchNextButton" type="button" aria-label="下一个匹配" title="下一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <p class="view-search-meta" id="aiSearchMeta">匹配 0 条（总计 0 条消息）</p>
+            </section>
+            <button
+              class="top-chip top-chip-icon"
+              id="aiSettingsToggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="AI设置"
+              data-label="AI设置"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" /><path d="M4.7 13.4a7.8 7.8 0 0 1 0-2.8l-2-1.2 2-3.4 2.3.6a8 8 0 0 1 2.4-1.4l.3-2.4h4l.3 2.4a8 8 0 0 1 2.4 1.4l2.3-.6 2 3.4-2 1.2a7.8 7.8 0 0 1 0 2.8l2 1.2-2 3.4-2.3-.6a8 8 0 0 1-2.4 1.4l-.3 2.4h-4l-.3-2.4a8 8 0 0 1-2.4-1.4l-2.3.6-2-3.4 2-1.2Z" /></svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="notesAddImageButton"
+              type="button"
+              aria-expanded="false"
+              aria-label="添加"
+              data-label="添加"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14" /><path d="M5 12h14" /></svg>
+            </button>
+            <section class="view-search-toolbar topbar-view-search topbar-network-image-search" id="networkImageSearchBar" aria-label="网络图片搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="networkImageSearchInput" type="search" placeholder="搜索图片类型或备注关键词" />
+                <button id="networkImageSearchClear" type="button">清空</button>
+              </div>
+              <p class="view-search-meta" id="networkImageSearchMeta">共 0 张图片</p>
+            </section>
+            <button
+              class="top-chip top-chip-icon"
+              id="networkImageSortToggle"
+              type="button"
+              aria-label="排序：新"
+              data-label="排序：新"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 4v16" />
+                <path d="m5 7 3-3 3 3" />
+                <path d="M16 20V4" />
+                <path d="m13 17 3 3 3-3" />
+              </svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="vaultTopUploadButton"
+              type="button"
+              aria-label="添加"
+              data-label="添加"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 17V7" />
+                <path d="m8.5 10.5 3.5-3.5 3.5 3.5" />
+                <path d="M5 18.5h14" />
+              </svg>
+            </button>
+            <section class="view-search-toolbar topbar-view-search topbar-tasks-search topbar-ai-search" id="vaultSearchBar" aria-label="私密空间文件搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="vaultSearchInput" type="search" placeholder="搜索文件标题或文本文档内容" />
+                <button id="vaultSearchClear" type="button">清空</button>
+                <div class="tasks-search-nav" id="vaultSearchNav" role="group" aria-label="私密空间搜索结果导航" hidden>
+                  <button id="vaultSearchPrevButton" type="button" aria-label="上一个匹配" title="上一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg>
+                  </button>
+                  <button id="vaultSearchNextButton" type="button" aria-label="下一个匹配" title="下一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <p class="view-search-meta" id="vaultSearchMeta">匹配 0 个文件（总计 0 个文件）</p>
+            </section>
+            <button
+              class="top-chip top-chip-icon tasks-alarm-toggle"
+              id="tasksAlarmOpenButton"
+              type="button"
+              aria-expanded="false"
+              aria-label="闹钟设置"
+              data-label="闹钟设置"
+              title="闹钟设置"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="13" r="6.5" />
+                <path d="M12 13V9.5" />
+                <path d="M12 13l2.5 1.6" />
+                <path d="M6.2 4.8 4.4 6.6" />
+                <path d="m17.8 4.8 1.8 1.8" />
+              </svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="websiteCollectionAddButton"
+              type="button"
+              aria-expanded="false"
+              aria-label="添加"
+              data-label="添加"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14" /><path d="M5 12h14" /></svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="websiteExportButton"
+              type="button"
+              aria-label="导出JSON"
+              data-label="导出"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v10" />
+                <path d="m8.5 10.5 3.5 3.5 3.5-3.5" />
+                <path d="M4.5 17.5h15" />
+                <path d="M5 20h14" />
+              </svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="websiteImportButton"
+              type="button"
+              aria-label="导入JSON"
+              data-label="导入"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20V10" />
+                <path d="m15.5 13.5-3.5-3.5-3.5 3.5" />
+                <path d="M4.5 6.5h15" />
+                <path d="M5 4h14" />
+              </svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="websiteImportUndoButton"
+              type="button"
+              aria-label="撤销上次导入"
+              data-label="撤销导入"
+              hidden
+              disabled
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 8H4v4" />
+                <path d="M4 12a8 8 0 1 0 2.35-5.65L4 8" />
+                <path d="M12 9v4l2.5 1.5" />
+              </svg>
+            </button>
+            <input id="websiteImportInput" type="file" accept=".json,application/json" hidden />
+            <section class="view-search-toolbar topbar-view-search topbar-tasks-search topbar-ai-search topbar-website-search" id="websiteSearchBar" aria-label="网站收藏搜索" hidden>
+              <div class="view-search-input-wrap">
+                <input id="websiteSearchInput" type="search" placeholder="搜索网站名称或网址" />
+                <button id="websiteSearchClear" type="button">清空</button>
+                <div class="tasks-search-nav" id="websiteSearchNav" role="group" aria-label="网站搜索结果导航" hidden>
+                  <button id="websiteSearchPrevButton" type="button" aria-label="上一个匹配" title="上一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6" /></svg>
+                  </button>
+                  <button id="websiteSearchNextButton" type="button" aria-label="下一个匹配" title="下一个匹配">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <p class="view-search-meta" id="websiteSearchMeta">匹配 0 个网站（总计 0 个网站）</p>
+            </section>
+            <button
+              class="top-chip top-chip-icon"
+              id="notesUserToggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="用户设置"
+              data-label="用户设置"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" /><path d="M4.5 20a7.5 7.5 0 0 1 15 0" /></svg>
+            </button>
+            <button
+              class="top-chip top-chip-icon"
+              id="noticeToggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="告知"
+              data-label="告知"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 1 0-12 0v3.2a2 2 0 0 1-.6 1.4L4 17h5" /><path d="M10 20a2 2 0 0 0 4 0" /></svg>
+            </button>
+            <div class="calendar-chip" id="calendarChip">
+              <button class="calendar-toggle" id="calendarToggle" aria-expanded="false" type="button">
+                <span class="calendar-date" id="calendarDateLabel">0000/00/00 星期日</span>
+                <strong class="calendar-time" id="calendarTimeLabel">00:00:00</strong>
+                <small class="calendar-lunar" id="calendarLunarLabel">农历信息加载中</small>
+              </button>
+              <div class="calendar-popover" id="calendarPopover" hidden>
+                <div class="calendar-popover-head">
+                  <h3>中华日历</h3>
+                  <div class="calendar-nav">
+                    <button id="calendarPrevMonth" type="button" aria-label="上个月">‹</button>
+                    <button class="calendar-month-trigger" id="calendarMonthTrigger" type="button" aria-expanded="false">
+                      <strong id="calendarMonthLabel">0000年00月</strong>
+                    </button>
+                    <button id="calendarNextMonth" type="button" aria-label="下个月">›</button>
+                    <button class="calendar-today-btn" id="calendarTodayBtn" type="button" aria-label="回到今天">今天</button>
+                  </div>
+                </div>
+
+                <div class="calendar-month-picker" id="calendarMonthPicker" hidden>
+                  <label>
+                    年份
+                    <select id="calendarYearSelect"></select>
+                  </label>
+                  <label>
+                    月份
+                    <select id="calendarMonthSelect">
+                      <option value="1">01月</option>
+                      <option value="2">02月</option>
+                      <option value="3">03月</option>
+                      <option value="4">04月</option>
+                      <option value="5">05月</option>
+                      <option value="6">06月</option>
+                      <option value="7">07月</option>
+                      <option value="8">08月</option>
+                      <option value="9">09月</option>
+                      <option value="10">10月</option>
+                      <option value="11">11月</option>
+                      <option value="12">12月</option>
+                    </select>
+                  </label>
+                  <div class="calendar-picker-actions">
+                    <button id="calendarPickerApply" type="button">确认</button>
+                    <button id="calendarPickerClose" type="button">取消</button>
+                  </div>
+                </div>
+
+                <div class="calendar-week-row" aria-hidden="true">
+                  <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+
+                <div class="calendar-summary">
+                  <p id="calendarSelectedLabel">公历：0000/00/00 星期日</p>
+                  <p id="calendarFestivalLabel">中国节日：暂无</p>
+                  <p id="calendarTermLabel">二十四节气：暂无</p>
+                </div>
+
+                <div class="calendar-section">
+                  <div class="calendar-data-mode" id="calendarDataMode" hidden>
+                    <strong id="calendarDataModeLabel">权威数据模式（已启用）</strong>
+                    <small id="calendarDataSource">数据来源：6tail lunar-javascript v1.7.7（开源黄历历算库，MIT）</small>
+                    <small id="calendarDataCoverage">覆盖范围：1900-2100（本页面启用范围）</small>
+                  </div>
+                  <h4>今日吉日、吉时、吉方向</h4>
+                  <p id="calendarLuckyDay">吉日：--</p>
+                  <p id="calendarLuckyTime">吉时：--</p>
+                  <p id="calendarLuckyDirection">吉方向：--</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="portal-search-canvas" id="portalSearchCanvas" aria-label="门户展示画布" hidden>
+            <div class="portal-search-app" id="portalSearchRoot">
+              <div class="portal-search-bg" aria-hidden="true">
+                <div class="portal-search-grid"></div>
+              </div>
+
+              <div class="portal-search-settings-overlay" id="portalSearchOverlay" hidden></div>
+              <aside
+                class="portal-search-settings-panel"
+                id="portalSearchSettingsPanel"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="portalSearchSettingsTitle"
+                tabindex="-1"
+                hidden
+              >
+                <div class="portal-search-settings-header">
+                  <h2 class="portal-search-settings-title" id="portalSearchSettingsTitle">搜索设置</h2>
+                  <button class="portal-search-close-btn" id="portalSearchCloseSettings" type="button" aria-label="关闭设置">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+
+                <section class="portal-search-settings-section">
+                  <h3 class="portal-search-settings-section-title">预设搜索引擎</h3>
+                  <div class="portal-search-engine-list" id="portalSearchPresetEngines"></div>
+                </section>
+
+                <section class="portal-search-settings-section">
+                  <h3 class="portal-search-settings-section-title">自定义搜索引擎</h3>
+                  <div class="portal-search-engine-list" id="portalSearchCustomEngines"></div>
+                </section>
+
+                <section class="portal-search-settings-section">
+                  <h3 class="portal-search-settings-section-title">添加自定义引擎</h3>
+                  <div class="portal-search-add-engine-form">
+                    <input type="text" class="portal-search-form-input" id="portalSearchCustomName" placeholder="引擎名称（如：百度）" />
+                    <input
+                      type="text"
+                      class="portal-search-form-input"
+                      id="portalSearchCustomUrl"
+                      placeholder="搜索URL（如：https://baidu.com/s?wd={q}）"
+                    />
+                    <span class="portal-search-form-hint">提示：在URL中使用 {q} 或 {keyword} 代表搜索关键词</span>
+                    <button class="portal-search-form-btn" id="portalSearchAddCustomEngine" type="button">添加</button>
+                  </div>
+                </section>
+              </aside>
+
+              <div class="portal-search-container">
+                <div class="portal-search-main-card">
+                  <div class="portal-search-toolbar">
+                    <div class="portal-search-logo">
+                      <span class="portal-search-logo-icon">搜</span>
+                      <span>智能搜索</span>
+                    </div>
+                    <div class="portal-search-mode-switch" id="portalSearchModeSwitch">
+                      <button class="portal-search-mode-btn active" data-mode="web" type="button">网络搜索</button>
+                      <button class="portal-search-mode-btn" data-mode="local" type="button">本地搜索</button>
+                    </div>
+                    <div class="portal-search-toolbar-right">
+                      <span class="portal-search-support-badge" id="portalSearchSupportBadge">本地索引检测中...</span>
+                      <button
+                        class="portal-search-settings-btn"
+                        id="portalSearchOpenSettings"
+                        type="button"
+                        aria-label="搜索设置"
+                        data-label="搜索设置"
+                        hidden
+                      >
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <circle cx="12" cy="12" r="3"></circle>
+                          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="portal-search-box">
+                    <div class="portal-search-input-wrapper">
+                      <span class="portal-search-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <circle cx="11" cy="11" r="8"></circle>
+                          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                      </span>
+                      <input
+                        type="text"
+                        class="portal-search-input"
+                        id="portalSearchInput"
+                        placeholder="输入关键词搜索..."
+                        autocomplete="off"
+                      />
+                    </div>
+
+                    <div class="portal-search-engine-dropdown" id="portalSearchEngineDropdown">
+                      <button
+                        class="portal-search-engine-dropdown-btn"
+                        id="portalSearchEngineDropdownBtn"
+                        type="button"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-controls="portalSearchEngineDropdownMenu"
+                      >
+                        <span id="portalSearchCurrentEngineName">Bing</span>
+                        <svg class="portal-search-engine-dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </button>
+                      <div class="portal-search-engine-dropdown-menu" id="portalSearchEngineDropdownMenu" role="listbox" tabindex="-1"></div>
+                    </div>
+
+                    <button class="portal-search-btn" id="portalSearchButton" type="button" aria-label="搜索" data-label="搜索">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="portal-search-active-context" id="portalSearchActiveContext" hidden aria-live="polite">
+                    当前模式：网络搜索 · 当前引擎：Bing
+                  </p>
+                  <p class="portal-search-notice" id="portalSearchNotice" hidden aria-live="assertive"></p>
+
+                  <div class="portal-search-local-panel" id="portalSearchLocalPanel">
+                    <div class="portal-search-local-panel-head">
+                      <span class="portal-search-local-title">本地文件索引</span>
+                      <span class="portal-search-local-status" id="portalSearchLocalStatus">尚未选择文件夹</span>
+                    </div>
+                    <div class="portal-search-local-actions">
+                      <button class="portal-search-small-btn" id="portalSearchPickFolderBtn" type="button">选择文件夹并索引</button>
+                      <button class="portal-search-small-btn" id="portalSearchReindexBtn" type="button">重新索引</button>
+                      <button class="portal-search-small-btn is-warn" id="portalSearchCancelIndexBtn" type="button" disabled>取消索引</button>
+                      <button class="portal-search-small-btn" id="portalSearchClearIndexBtn" type="button" disabled>清空索引</button>
+                      <input id="portalSearchFolderInput" type="file" webkitdirectory directory multiple hidden />
+                    </div>
+                    <div class="portal-search-progress-track">
+                      <div class="portal-search-progress-fill" id="portalSearchIndexProgress"></div>
+                    </div>
+                    <section class="portal-search-index-report" id="portalSearchIndexReport" aria-live="polite">
+                      <div class="portal-search-index-report-head">
+                        <span class="portal-search-index-report-title">索引报告</span>
+                        <span class="portal-search-index-report-note" id="portalSearchIndexReportNote">等待首次索引</span>
+                      </div>
+                      <div class="portal-search-index-report-grid">
+                        <article class="portal-search-index-report-item">
+                          <span>扫描文件总数</span>
+                          <strong id="portalSearchIndexReportScanned">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item">
+                          <span>纳入索引文件</span>
+                          <strong id="portalSearchIndexReportIndexed">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item">
+                          <span>正文可检索</span>
+                          <strong id="portalSearchIndexReportSearchable">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item">
+                          <span>文本直读成功</span>
+                          <strong id="portalSearchIndexReportTextSuccess">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item">
+                          <span>文档解析成功</span>
+                          <strong id="portalSearchIndexReportDocSuccess">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item" id="portalSearchReportCardFailed" data-report-detail-type="failed">
+                          <span>文档解析失败</span>
+                          <strong id="portalSearchIndexReportFailed">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item">
+                          <span>解析跳过总数</span>
+                          <strong id="portalSearchIndexReportSkipped">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item">
+                          <span>非可解析类型</span>
+                          <strong id="portalSearchIndexReportUnsupported">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item" id="portalSearchReportCardOversize" data-report-detail-type="oversize">
+                          <span>超大小跳过</span>
+                          <strong id="portalSearchIndexReportOversize">--</strong>
+                        </article>
+                        <article class="portal-search-index-report-item" id="portalSearchReportCardReadFailed" data-report-detail-type="readFailed">
+                          <span>读取失败</span>
+                          <strong id="portalSearchIndexReportReadFailed">--</strong>
+                        </article>
+                      </div>
+                      <section class="portal-search-index-report-hover" id="portalSearchIndexReportHover" hidden aria-live="polite">
+                        <div class="portal-search-index-report-hover-head">
+                          <strong id="portalSearchIndexReportHoverTitle">明细</strong>
+                        </div>
+                        <div class="portal-search-index-report-hover-body" id="portalSearchIndexReportHoverBody"></div>
+                      </section>
+                    </section>
+                    <p class="portal-search-support-note" id="portalSearchLocalHelp">数据仅在本机浏览器内索引，安全可靠。</p>
+                  </div>
+
+                  <div class="portal-search-result-panel" id="portalSearchResultPanel">
+                    <div class="portal-search-result-head">
+                      <span id="portalSearchResultTitle">结果</span>
+                      <span id="portalSearchResultMeta"></span>
+                    </div>
+                    <div class="portal-search-result-list" id="portalSearchResultList"></div>
+                  </div>
+                </div>
+
+                <section class="portal-search-site-panel" id="portalSearchSitePanel" hidden>
+                  <div class="portal-search-site-head">
+                    <span class="portal-search-site-title">本站</span>
+                    <span class="portal-search-site-meta" id="portalSearchSiteMeta">统计加载中...</span>
+                  </div>
+                  <div class="portal-search-site-grid">
+                    <article class="portal-search-site-card">
+                      <h4>站内应用</h4>
+                      <p class="portal-search-site-value"><strong id="portalSearchSiteInternalCount">--</strong><span>个工具</span></p>
+                    </article>
+                    <article class="portal-search-site-card">
+                      <h4>站长推荐</h4>
+                      <p class="portal-search-site-value"><strong id="portalSearchSiteRecommendCount">--</strong><span>个网站</span></p>
+                    </article>
+                    <article class="portal-search-site-card">
+                      <h4>分享收获</h4>
+                      <p class="portal-search-site-value"><strong id="portalSearchSiteTutorialCount">--</strong><span>个内容</span></p>
+                    </article>
+                  </div>
+                </section>
+
+                <section class="portal-search-cosmos-panel" id="portalSearchCosmosPanel" hidden aria-label="科技宇宙地球动画">
+                  <canvas class="portal-search-cosmos-canvas" id="portalSearchCosmosCanvas"></canvas>
+                  <p class="portal-search-cosmos-note">科技宇宙 · 蓝色地球自转粒子动态</p>
+                </section>
+              </div>
+
+              <div class="portal-search-preview-overlay" id="portalSearchPreviewOverlay" hidden></div>
+              <section class="portal-search-preview-modal" id="portalSearchPreviewModal" hidden>
+                <div class="portal-search-preview-head">
+                  <span class="portal-search-preview-title" id="portalSearchPreviewTitle">文件预览</span>
+                  <button class="portal-search-close-btn" id="portalSearchClosePreview" type="button" aria-label="关闭预览">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+                <div class="portal-search-preview-body">
+                  <p class="portal-search-preview-meta" id="portalSearchPreviewMeta"></p>
+                  <div class="portal-search-preview-content" id="portalSearchPreviewContent"></div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="panel-grid" id="panelGrid">
+            <article class="panel" id="recommendPanel">
+              <div class="recommend-category-grid" id="recommendGrid"></div>
+              <section class="protected-feature-center" id="websiteCenter" aria-label="网站功能区" hidden>
+                <article class="notes-auth-placeholder protected-feature-auth" id="websiteAuthPlaceholder" hidden>
+                  <button class="feature-login-button" type="button" aria-label="登录" data-open-auth="true">登录</button>
+                </article>
+                <article class="protected-feature-workspace" id="websiteWorkspace" hidden>
+                  <div class="protected-feature-workspace-inner protected-data-layout website-collection-canvas" id="websiteCollectionCanvas" aria-label="网站收藏展示画布">
+                    <div class="website-collection-tags-shell" id="websiteCollectionTagsShell" hidden>
+                      <button
+                        class="website-collection-tags-nav is-prev"
+                        id="websiteCollectionTagsPrev"
+                        type="button"
+                        aria-label="向左滚动网站类型标签"
+                        title="向左滚动"
+                      >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M14.5 6.5 9 12l5.5 5.5"></path>
+                        </svg>
+                      </button>
+                      <div
+                        class="website-collection-tags-viewport"
+                        id="websiteCollectionTagsViewport"
+                        role="region"
+                        aria-label="网站类型标签滚动区"
+                        tabindex="0"
+                      >
+                        <div class="website-collection-tags" id="websiteCollectionTags"></div>
+                      </div>
+                      <button
+                        class="website-collection-tags-nav is-next"
+                        id="websiteCollectionTagsNext"
+                        type="button"
+                        aria-label="向右滚动网站类型标签"
+                        title="向右滚动"
+                      >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M9.5 6.5 15 12l-5.5 5.5"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="website-collection-empty" id="websiteCollectionEmpty">请点击上方“添加”按钮添加网站</p>
+                    <div class="website-collection-grid" id="websiteCollectionGrid" hidden></div>
+                  </div>
+                </article>
+              </section>
+              <section class="protected-feature-center" id="favoritesCenter" aria-label="收藏功能区" hidden></section>
+              <section class="protected-feature-center" id="vaultCenter" aria-label="密盒功能区" hidden>
+                <article class="notes-auth-placeholder protected-feature-auth" id="vaultAuthPlaceholder" hidden>
+                  <button class="feature-login-button" type="button" aria-label="登录" data-open-auth="true">登录</button>
+                </article>
+                <article class="protected-feature-workspace" id="vaultWorkspace" hidden>
+                  <div class="protected-feature-workspace-inner protected-data-layout vault-file-canvas">
+                    <input id="vaultFileInput" type="file" multiple hidden />
+                    <header class="vault-file-hero">
+                      <div class="vault-file-storage-line">
+                        <span id="vaultPersistBadge" class="vault-file-badge" hidden>检测中...</span>
+                      </div>
+                    </header>
+
+                    <section class="vault-file-layout">
+                      <section class="vault-file-card vault-file-card-list">
+                        <div class="vault-file-list-head">
+                          <h4>文件列表</h4>
+                          <div class="vault-file-list-meta">
+                            <span id="vaultStorageUsage" class="vault-file-storage-usage"></span>
+                            <span id="vaultFileCount">0 个文件</span>
+                          </div>
+                        </div>
+                        <div id="vaultFileList" class="vault-file-list">
+                          <p class="vault-file-empty">请点击上方的“添加”按钮导入文件。</p>
+                        </div>
+                      </section>
+                      <section class="vault-file-card vault-preview-card" id="vaultPreviewCard" aria-label="预览区">
+                        <div class="vault-preview-head">
+                          <h4 id="vaultPreviewTitle">预览</h4>
+                          <div class="vault-preview-actions">
+                            <button id="vaultPreviewOpenButton" type="button" disabled>在新标签打开</button>
+                            <button id="vaultPreviewDownloadButton" type="button" disabled>下载</button>
+                          </div>
+                        </div>
+                        <p class="vault-preview-meta" id="vaultPreviewMeta"></p>
+                        <div class="vault-preview-body" id="vaultPreviewBody"></div>
+                      </section>
+                    </section>
+                  </div>
+                </article>
+                <template id="vaultFileItemTemplate">
+                  <article class="vault-file-item">
+                    <div class="vault-file-meta">
+                      <h5 class="vault-file-name"></h5>
+                      <p class="vault-file-info"></p>
+                    </div>
+                    <div class="vault-file-actions">
+                      <button data-action="preview" type="button">预览</button>
+                      <button data-action="download" type="button">下载</button>
+                      <button data-action="delete" class="danger" type="button">删除</button>
+                    </div>
+                  </article>
+                </template>
+              </section>
+              <section class="notes-center" id="notesCenter" aria-label="网络图片" hidden>
+                <article class="notes-auth-placeholder" id="notesAuthPlaceholder" hidden>
+                  <button id="notesOpenSettingsButton" class="feature-login-button" type="button" aria-label="登录" data-open-auth="true">登录</button>
+                </article>
+
+                <article class="network-image-canvas" id="notesWorkspace" aria-label="网络图片画布" hidden>
+                  <div class="network-image-grid" id="networkImageGrid"></div>
+                  <p class="network-image-empty" id="networkImageEmpty">暂无网络图片，点击“添加”开始导入。</p>
+                </article>
+                <p class="notes-auth-status" id="notesAuthStatus" hidden></p>
+              </section>
+              <section class="local-center protected-feature-center" id="localCenter" aria-label="本地快捷功能区" hidden>
+                <article class="notes-auth-placeholder protected-feature-auth" id="localAuthPlaceholder" hidden>
+                  <button class="feature-login-button" type="button" aria-label="登录" data-open-auth="true">登录</button>
+                </article>
+                <div class="local-grid" id="localWorkspace" hidden>
+                  <article class="local-block" aria-labelledby="localAppsTitle">
+                    <div class="local-block-head">
+                      <h4 id="localAppsTitle">应用</h4>
+                    </div>
+                    <form class="local-add-form" id="localAppForm" action="javascript:void(0)">
+                      <input id="localAppNameInput" type="text" placeholder="应用名称（可选）" />
+                      <input id="localAppPathInput" type="text" placeholder="应用路径，例如 C:\\Program Files\\xxx\\app.exe" />
+                      <button id="localAppAddButton" type="submit">添加应用</button>
+                    </form>
+                    <ul class="local-list" id="localAppsList"></ul>
+                  </article>
+                  <article class="local-block" aria-labelledby="localFilesTitle">
+                    <div class="local-block-head">
+                      <h4 id="localFilesTitle">文件</h4>
+                    </div>
+                    <form class="local-add-form" id="localFileForm" action="javascript:void(0)">
+                      <input id="localFileNameInput" type="text" placeholder="文件名称（可选）" />
+                      <input id="localFilePathInput" type="text" placeholder="文件路径，例如 D:\\docs\\计划书.docx" />
+                      <button id="localFileAddButton" type="submit">添加文件</button>
+                    </form>
+                    <ul class="local-list" id="localFilesList"></ul>
+                  </article>
+                </div>
+                <p class="local-status" id="localStatus" hidden></p>
+              </section>
+              <section class="protected-feature-center" id="tasksCenter" aria-label="任务功能区" hidden>
+                <article class="notes-auth-placeholder protected-feature-auth" id="tasksAuthPlaceholder" hidden>
+                  <button class="feature-login-button" type="button" aria-label="登录" data-open-auth="true">登录</button>
+                </article>
+                <article class="protected-feature-workspace" id="tasksWorkspace" hidden>
+                  <div class="tasks-workspace">
+                    <div class="tasks-layout">
+                      <aside class="tasks-calendar-host" aria-label="任务日历与任务列表">
+                        <div class="tasks-calendar-head">
+                          <button id="tasksMonthPrevButton" type="button" aria-label="上个月">上月</button>
+                          <strong id="tasksMonthLabel">--</strong>
+                          <div class="tasks-calendar-head-actions">
+                            <div class="tasks-calendar-view-switch" role="group" aria-label="日历视图切换">
+                              <button class="is-active" id="tasksCalendarMonthViewButton" type="button" aria-pressed="true">月</button>
+                              <button id="tasksCalendarWeekViewButton" type="button" aria-pressed="false">周</button>
+                            </div>
+                            <button id="tasksMonthTodayButton" type="button">今天</button>
+                            <button id="tasksMonthNextButton" type="button" aria-label="下个月">下月</button>
+                          </div>
+                        </div>
+                        <ol class="tasks-calendar-weekdays" aria-label="星期标题">
+                          <li>日</li>
+                          <li>一</li>
+                          <li>二</li>
+                          <li>三</li>
+                          <li>四</li>
+                          <li>五</li>
+                          <li>六</li>
+                        </ol>
+                        <ul class="tasks-calendar-grid" id="tasksCalendarGrid" aria-label="任务日历月份视图"></ul>
+                      </aside>
+                    </div>
+                  </div>
+                </article>
+              </section>
+              <section class="protected-feature-center" id="aiCenter" aria-label="AI助手功能区" hidden>
+                <article class="notes-auth-placeholder protected-feature-auth" id="aiAuthPlaceholder" hidden>
+                  <button class="feature-login-button" type="button" aria-label="登录" data-open-auth="true">登录</button>
+                </article>
+                <article class="protected-feature-workspace" id="aiWorkspace" hidden>
+                  <div class="ai-display-canvas">
+                    <section class="ai-assistant" id="aiAssistant" aria-label="AI助手工作区">
+                    <aside class="ai-history-panel" aria-label="对话历史列表">
+                      <div class="ai-history-head">
+                        <h3>对话历史</h3>
+                        <div class="ai-history-head-actions">
+                          <button
+                            id="aiHistorySelectModeButton"
+                            class="ai-icon-button ai-history-icon-button"
+                            type="button"
+                            aria-label="选择"
+                            data-label="选择"
+                            title="选择"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" /><path d="m8 12 2.8 2.8L16 9.6" /></svg>
+                          </button>
+                          <button
+                            id="aiHistorySelectAllButton"
+                            class="ai-icon-button ai-history-icon-button"
+                            type="button"
+                            aria-label="全选"
+                            data-label="全选"
+                            title="全选"
+                            hidden
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7h11M9 12h11M9 17h11" /><path d="m3.8 12 1.7 1.7L7.4 11.8" /></svg>
+                          </button>
+                          <button
+                            id="aiHistoryDeleteSelectedButton"
+                            class="ai-icon-button ai-history-icon-button"
+                            type="button"
+                            aria-label="删除所选"
+                            data-label="删除所选"
+                            title="删除所选"
+                            hidden
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16" /><path d="M9 7V5h6v2" /><path d="m8 10 .6 8h6.8l.6-8" /></svg>
+                          </button>
+                          <button
+                            id="aiNewSessionButton"
+                            class="ai-icon-button ai-history-icon-button"
+                            type="button"
+                            aria-label="新对话"
+                            data-label="新对话"
+                            title="新对话"
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+                          </button>
+                        </div>
+                      </div>
+                      <ul class="ai-history-list" id="aiHistoryList"></ul>
+                      <p class="ai-history-empty" id="aiHistoryEmpty" hidden>暂无历史对话</p>
+                    </aside>
+                    <section class="ai-main-pane">
+                      <header class="ai-quick-bar">
+                        <label class="ai-quick-model-field" for="aiQuickModelSelect">
+                          <div class="ai-quick-model-inline">
+                            <select id="aiQuickModelSelect" aria-label="选择AI模型">
+                              <option value="">请先配置模型</option>
+                            </select>
+                            <select id="aiQuickModeSelect" class="ai-quick-mode-select" aria-label="选择AI模式">
+                              <option value="chat">聊天</option>
+                              <option value="image">生图</option>
+                            </select>
+                            <span class="ai-quick-model-count" id="aiQuickModelCount" hidden>本地模型：0个</span>
+                          </div>
+                        </label>
+                        <div class="ai-agent-mode-switch" aria-label="Agent模式切换" aria-hidden="true" hidden>
+                          <button id="aiAgentModeResearch" type="button" class="is-active" aria-pressed="true">研究模式</button>
+                          <button id="aiAgentModeExecution" type="button" aria-pressed="false">执行模式</button>
+                        </div>
+                        <div class="ai-quick-actions">
+                          <button id="aiClearChatButton" type="button">清空</button>
+                          <button id="aiExportChatButton" type="button">导出</button>
+                        </div>
+                      </header>
+                      <div class="ai-dialog-stage">
+                        <div class="ai-dialog-content" id="aiDialogContent">
+                          <section class="ai-chat-panel" id="aiChatPanel" aria-live="polite"></section>
+                        </div>
+                        <footer class="ai-composer">
+                          <textarea id="aiMessageInput" placeholder="输入你的问题或任务，按 Ctrl+Enter 发送"></textarea>
+                          <div class="ai-composer-bottom">
+                            <div class="ai-attachment-row">
+                              <button
+                                id="aiAttachmentAddButton"
+                                class="ai-icon-button ai-icon-add"
+                                type="button"
+                                aria-label="添加文件"
+                                data-label="添加文件"
+                                title="添加文件"
+                              >
+                                +
+                              </button>
+                              <input
+                                id="aiAttachmentInput"
+                                type="file"
+                                multiple
+                                accept="image/*,audio/*,video/*,.txt,.text,.md,.markdown,.rtf,.pdf,.doc,.docx,.odt,.wps,.wpt,.ppt,.pptx,.odp,.dps,.dpt,.csv,.tsv,.xls,.xlsx,.xlsm,.xlsb,.ods,.et,.ett,.json,.jsonl,.xml,.yaml,.yml,.toml,.ini,.conf,.log,.js,.ts,.tsx,.jsx,.py,.java,.go,.rs,.c,.cc,.cpp,.h,.hpp,.cs,.php,.rb,.swift,.kt,.kts,.m,.mm,.sh,.bat,.ps1,.html,.css,.scss,.less,.sql,.vue,.svelte"
+                                hidden
+                              />
+                              <span id="aiAttachmentMeta" hidden></span>
+                              <button
+                                id="aiAttachmentClearButton"
+                                class="ai-icon-button"
+                                type="button"
+                                aria-label="移除附件"
+                                data-label="移除附件"
+                                title="移除附件"
+                                disabled
+                              >
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10" /><path d="m17 7-10 10" /></svg>
+                              </button>
+                            </div>
+                            <div class="ai-web-search-wrap">
+                              <select id="aiWebSearchEngineSelect" class="ai-web-search-engine-select" aria-label="联网搜索引擎偏好">
+                                <option value="auto">引擎：自动</option>
+                                <option value="bing-rss">引擎：Bing</option>
+                                <option value="baidu-html">引擎：Baidu</option>
+                                <option value="google-html">引擎：Google</option>
+                              </select>
+                              <button
+                                id="aiWebSearchToggle"
+                                class="ai-web-search-toggle ai-icon-button"
+                                type="button"
+                                role="switch"
+                                aria-checked="false"
+                                aria-label="联网搜索：关闭"
+                                data-label="联网搜索：关闭"
+                                title="联网搜索：关闭"
+                              >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                  <circle cx="12" cy="12" r="8.5" />
+                                  <path d="M3.5 12h17" />
+                                  <path d="M12 3.5a13 13 0 0 1 0 17" />
+                                  <path d="M12 3.5a13 13 0 0 0 0 17" />
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="ai-composer-actions">
+                              <button
+                                id="aiStopButton"
+                                class="ai-icon-button"
+                                type="button"
+                                aria-label="停止"
+                                data-label="停止"
+                                title="停止"
+                                disabled
+                              >
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.6" ry="1.6" /></svg>
+                              </button>
+                              <button
+                                id="aiSendButton"
+                                class="ai-icon-button"
+                                type="button"
+                                aria-label="发送"
+                                data-label="发送"
+                                title="发送"
+                              >
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14" /><path d="m13.5 6.5 5.5 5.5-5.5 5.5" /></svg>
+                              </button>
+                            </div>
+                          </div>
+                        </footer>
+                        <p class="ai-runtime-status" id="aiRuntimeStatus" hidden></p>
+                      </div>
+                    </section>
+                    </section>
+                  </div>
+                </article>
+              </section>
+              <section class="notice-modal tutorial-center" id="tutorialCenter" aria-labelledby="tutorialCenterTitle" hidden>
+                <div class="notice-head">
+                  <h3 id="tutorialCenterTitle"></h3>
+                  <div class="notice-head-actions">
+                    <div class="notice-head-filters">
+                      <input id="tutorialSearchKeyword" type="search" placeholder="搜索标题或全文关键字" />
+                      <button id="tutorialSortToggle" class="notice-sort-toggle" type="button" aria-label="排序：新（点击切换）">新</button>
+                    </div>
+                    <button class="notice-copy-btn" id="tutorialCopyButton" type="button">复制内容</button>
+                  </div>
+                </div>
+                <p class="notice-source-hint" id="tutorialSourceHint" hidden></p>
+                <div class="notice-layout">
+                  <aside class="notice-list-panel" aria-label="教程文档列表">
+                    <ul class="notice-list" id="tutorialList"></ul>
+                  </aside>
+                  <article class="notice-content-panel">
+                    <div class="notice-doc" id="tutorialContent">
+                      <p class="notice-placeholder">请选择左侧教程文档查看内容。</p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </article>
+          </section>
+        </main>
+        <footer class="site-footer" aria-label="备案信息">
+          <p>粤ICP备2025399512号</p>
+        </footer>
+      </div>
+    </div>
+
+    <div class="modal-backdrop notice-backdrop" id="noticeModal" hidden>
+      <section class="notice-modal" aria-modal="true" aria-labelledby="noticeModalTitle" role="dialog">
+        <div class="notice-head">
+          <h3 id="noticeModalTitle">告知中心</h3>
+          <div class="notice-head-actions">
+            <div class="notice-head-filters">
+              <input id="noticeSearchKeyword" type="search" placeholder="搜索标题或全文关键字" />
+              <select id="noticeSortOrder">
+                <option value="latest">最新</option>
+                <option value="oldest">最旧</option>
+                <option value="name">名称</option>
+              </select>
+            </div>
+            <button class="notice-refresh-btn" id="noticeRefreshButton" type="button">刷新列表</button>
+            <button class="notice-copy-btn" id="noticeCopyButton" type="button">复制内容</button>
+            <button class="notice-close-btn" id="noticeCloseButton" aria-label="关闭告知中心" type="button">×</button>
+          </div>
+        </div>
+        <p class="notice-source-hint" id="noticeSourceHint" hidden></p>
+        <div class="notice-layout">
+          <aside class="notice-list-panel" aria-label="告知文档列表">
+            <ul class="notice-list" id="noticeList"></ul>
+          </aside>
+          <article class="notice-content-panel">
+            <div class="notice-doc" id="noticeContent">
+              <p class="notice-placeholder">请选择左侧文档查看内容。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop notes-auth-backdrop" id="notesAuthModal" hidden>
+      <section class="notes-auth-modal notes-auth-card" aria-modal="true" aria-labelledby="notesAuthModalTitle" role="dialog">
+        <div class="notes-auth-modal-head">
+          <div class="notes-auth-head">
+            <h3 id="notesAuthModalTitle">注册/登录</h3>
+            <p id="notesAuthModalSubtitle" hidden></p>
+          </div>
+          <button class="notes-auth-close-btn" id="notesAuthModalClose" aria-label="关闭设置面板" type="button">×</button>
+        </div>
+        <div class="notes-auth-tabs" id="notesAuthTabs">
+          <button id="notesTabLogin" type="button" data-mode="login">登录</button>
+          <button id="notesTabRegister" type="button" data-mode="register">注册</button>
+        </div>
+        <p class="notes-auth-status notes-auth-modal-status" id="notesAuthModalStatus" hidden></p>
+        <form class="notes-auth-form" id="notesLoginForm" action="javascript:void(0)" autocomplete="off">
+          <input id="notesLoginUsername" type="text" placeholder="用户名" autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <input id="notesLoginPassword" type="password" placeholder="密码" autocomplete="current-password" />
+          <button type="submit">登录</button>
+        </form>
+        <form class="notes-auth-form" id="notesRegisterForm" action="javascript:void(0)" hidden>
+          <input id="notesRegisterUsername" type="text" placeholder="用户名（3-24位）" autocomplete="username" />
+          <input id="notesRegisterPassword" type="password" placeholder="密码（至少8位）" autocomplete="new-password" />
+          <input id="notesRegisterConfirmPassword" type="password" placeholder="确认密码" autocomplete="new-password" />
+          <button type="submit">注册并解锁功能</button>
+        </form>
+        <section class="notes-settings-panel" id="notesSettingsPanel" hidden>
+          <form class="notes-auth-form" id="notesUsernameForm" action="javascript:void(0)">
+            <input id="notesUsernameInput" type="text" placeholder="新用户名（3-24位）" autocomplete="username" />
+            <button type="submit">修改用户名</button>
+          </form>
+          <form class="notes-auth-form" id="notesPasswordForm" action="javascript:void(0)">
+            <input id="notesPasswordOld" type="password" placeholder="当前密码" autocomplete="current-password" />
+            <input id="notesPasswordNew" type="password" placeholder="新密码（至少8位）" autocomplete="new-password" />
+            <input id="notesPasswordConfirm" type="password" placeholder="确认新密码" autocomplete="new-password" />
+            <button type="submit">修改密码</button>
+          </form>
+        </section>
+        <div class="notes-auth-session" id="notesAuthSession" hidden>
+          <strong id="notesAccountInfo">已登录账号：--</strong>
+          <div class="notes-auth-session-actions">
+            <button id="notesLogoutButton" type="button">退出</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" id="networkImageModal" hidden>
+      <section class="modal network-image-modal" aria-modal="true" aria-labelledby="networkImageModalTitle" role="dialog">
+        <div class="modal-head">
+          <h3 id="networkImageModalTitle">添加</h3>
+          <button id="networkImageModalClose" type="button" aria-label="关闭添加窗口">×</button>
+        </div>
+        <p>请输入网络图片地址，并选择图片类型。</p>
+        <form class="protected-data-form network-image-form" id="networkImageForm" action="javascript:void(0)">
+          <input id="networkImageUrlInput" type="url" placeholder="图片地址（https://...）" aria-label="网络图片地址" />
+          <select id="networkImageTypeSelect" aria-label="图片类型">
+            <option value="ai">AI</option>
+            <option value="photo">摄影</option>
+            <option value="other">其他</option>
+            <option value="custom">自定义</option>
+          </select>
+          <input id="networkImageTypeCustomInput" type="text" placeholder="自定义类型" aria-label="自定义类型" hidden />
+          <textarea id="networkImageNoteInput" placeholder="备注（可选）" aria-label="备注（可选）"></textarea>
+          <button id="networkImageSubmitButton" type="submit">添加</button>
+        </form>
+        <p class="network-image-status" id="networkImageStatus" hidden></p>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" id="websiteAddModal" hidden>
+      <section class="modal website-add-modal" aria-modal="true" aria-labelledby="websiteAddModalTitle" role="dialog">
+        <div class="modal-head">
+          <h3 id="websiteAddModalTitle">添加网站</h3>
+          <button id="websiteAddModalClose" type="button" aria-label="关闭添加网站窗口">×</button>
+        </div>
+        <p id="websiteAddModalHint">填写网站名称与网址，并选择网站类型、图标和边框颜色。</p>
+        <form class="protected-data-form website-add-form" id="websiteAddForm" action="javascript:void(0)">
+          <input id="websiteAddNameInput" type="text" placeholder="网站名称（必填）" aria-label="网站名称" />
+          <input id="websiteAddUrlInput" type="url" placeholder="网站网址（https://...）" aria-label="网站网址" />
+          <select id="websiteAddTypeSelect" aria-label="网站类型">
+            <option value="common">常用网站</option>
+            <option value="news">新闻资讯</option>
+            <option value="life">生活购物</option>
+            <option value="entertainment">娱乐旅行</option>
+            <option value="education">教育学习</option>
+            <option value="ai">人工智能</option>
+            <option value="custom">自定义</option>
+          </select>
+          <input id="websiteAddTypeCustomInput" type="text" placeholder="自定义类型名称" aria-label="自定义类型名称" hidden />
+          <div class="website-add-icon-picker" id="websiteAddIconPicker">
+            <button
+              class="website-add-icon-toggle"
+              id="websiteAddIconToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="websiteAddIconPanel"
+              aria-label="选择图标"
+            >
+              <span class="website-add-icon-toggle-preview" id="websiteAddIconTogglePreview" aria-hidden="true">✨</span>
+              <span class="website-add-icon-toggle-label" id="websiteAddIconToggleLabel">默认图标（自动）</span>
+              <span class="website-add-icon-toggle-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div class="website-add-icon-panel" id="websiteAddIconPanel" hidden>
+              <button class="website-add-icon-reset" id="websiteAddIconResetButton" type="button">默认图标（自动）</button>
+              <div class="website-add-icon-grid" id="websiteAddIconGrid" role="listbox" aria-label="图标列表"></div>
+            </div>
+          </div>
+          <select id="websiteAddIconSelect" aria-label="类型图标（可选）" hidden>
+            <option value="">默认图标（自动）</option>
+            <option value="🌐">🌐 环球</option>
+            <option value="📰">📰 新闻</option>
+            <option value="🛍️">🛍️ 购物</option>
+            <option value="🧭">🧭 导航</option>
+            <option value="🎯">🎯 目标</option>
+            <option value="🎓">🎓 学习</option>
+            <option value="🤖">🤖 AI</option>
+            <option value="💼">💼 工作</option>
+            <option value="📚">📚 阅读</option>
+            <option value="📊">📊 数据</option>
+            <option value="📺">📺 视频</option>
+            <option value="🎬">🎬 影视</option>
+            <option value="🎮">🎮 游戏</option>
+            <option value="🎧">🎧 音乐</option>
+            <option value="🧠">🧠 灵感</option>
+            <option value="💡">💡 创意</option>
+            <option value="🧰">🧰 工具</option>
+            <option value="⚙️">⚙️ 设置</option>
+            <option value="🔍">🔍 搜索</option>
+            <option value="🔐">🔐 安全</option>
+            <option value="🏠">🏠 生活</option>
+            <option value="🍽️">🍽️ 美食</option>
+            <option value="✈️">✈️ 出行</option>
+            <option value="🚗">🚗 汽车</option>
+            <option value="🚄">🚄 交通</option>
+            <option value="🏥">🏥 健康</option>
+            <option value="💰">💰 金融</option>
+            <option value="📈">📈 投资</option>
+            <option value="🧾">🧾 账单</option>
+            <option value="🛒">🛒 电商</option>
+            <option value="🏷️">🏷️ 标签</option>
+            <option value="📷">📷 摄影</option>
+            <option value="🖼️">🖼️ 设计</option>
+            <option value="✍️">✍️ 写作</option>
+            <option value="🧪">🧪 研究</option>
+            <option value="🔬">🔬 科学</option>
+            <option value="🛰️">🛰️ 科技</option>
+            <option value="🌍">🌍 地球</option>
+            <option value="🌟">🌟 收藏</option>
+            <option value="⭐">⭐ 优选</option>
+          </select>
+          <div class="website-add-border-picker" id="websiteAddBorderPicker">
+            <div class="website-add-border-head">
+              <span class="website-add-border-title">边框颜色</span>
+              <button class="website-add-border-reset" id="websiteAddBorderResetButton" type="button">自动</button>
+            </div>
+            <div class="website-add-border-swatches" id="websiteAddBorderSwatches" role="listbox" aria-label="边框颜色预设"></div>
+            <label class="website-add-border-custom" for="websiteAddBorderColorInput">
+              <span>自定义颜色</span>
+              <input id="websiteAddBorderColorInput" type="color" value="#4f87b8" aria-label="自定义边框颜色" />
+            </label>
+            <input id="websiteAddBorderColorValueInput" type="hidden" value="" />
+          </div>
+          <button id="websiteAddSubmitButton" type="submit">添加</button>
+        </form>
+        <p class="website-add-status" id="websiteAddStatus" hidden></p>
+      </section>
+    </div>
+
+    <div class="modal-backdrop tasks-search-backdrop" id="tasksSearchResultModal" hidden>
+      <section class="tasks-search-modal" aria-modal="true" aria-labelledby="tasksSearchResultTitle" role="dialog">
+        <div class="tasks-search-modal-head">
+          <h3 id="tasksSearchResultTitle">跨月份搜索结果</h3>
+          <button class="tasks-search-modal-close" id="tasksSearchResultClose" aria-label="关闭搜索结果" type="button">×</button>
+        </div>
+        <p class="tasks-search-modal-meta" id="tasksSearchResultMeta">共 0 条结果</p>
+        <ul class="tasks-search-modal-list" id="tasksSearchResultList"></ul>
+      </section>
+    </div>
+
+    <div class="modal-backdrop tasks-alarm-backdrop" id="tasksAlarmModal" hidden>
+      <section class="tasks-alarm-modal" aria-modal="true" aria-labelledby="tasksAlarmTitle" role="dialog">
+        <div class="tasks-alarm-head">
+          <h3 id="tasksAlarmTitle">闹钟设置</h3>
+          <button id="tasksAlarmClose" class="tasks-alarm-close" type="button" aria-label="关闭闹钟设置">×</button>
+        </div>
+        <div class="tasks-alarm-time" id="tasksAlarmCurrentTime">00:00:00</div>
+        <form class="tasks-alarm-form" id="tasksAlarmForm" action="javascript:void(0)">
+          <div class="tasks-alarm-time-field">
+            <input id="tasksAlarmTimeInput" type="time" required />
+            <button id="tasksAlarmTimePickerButton" class="tasks-alarm-time-picker" type="button" aria-label="选择时间" title="选择时间">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="13" r="6.5" />
+                <path d="M12 13V9.6" />
+                <path d="M12 13l2.6 1.7" />
+                <path d="M6.3 4.9 4.5 6.7" />
+                <path d="m17.7 4.9 1.8 1.8" />
+              </svg>
+            </button>
+          </div>
+          <select id="tasksAlarmSoundSelect" aria-label="闹钟音效">
+            <option value="online1">在线音效1</option>
+            <option value="online2">在线音效2</option>
+            <option value="online3">在线音效3</option>
+            <option value="classic">经典音效</option>
+          </select>
+          <button id="tasksAlarmSubmitButton" type="submit">保存</button>
+        </form>
+        <ul class="tasks-alarm-list" id="tasksAlarmList"></ul>
+        <p class="tasks-alarm-status" id="tasksAlarmStatus" hidden></p>
+      </section>
+    </div>
+
+    <div class="modal-backdrop tasks-alarm-ring-backdrop" id="tasksAlarmRingBackdrop" hidden>
+      <section class="tasks-alarm-ring-modal" aria-modal="true" aria-labelledby="tasksAlarmRingTitle" role="dialog">
+        <h3 id="tasksAlarmRingTitle">闹钟响了</h3>
+        <p id="tasksAlarmRingMeta">请及时处理当前事项</p>
+        <button id="tasksAlarmRingStopButton" type="button">停止闹铃</button>
+      </section>
+    </div>
+
+    <audio id="tasksAlarmAudio" loop preload="auto">
+      <source src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3" type="audio/mpeg" />
+      <source src="https://assets.mixkit.co/active_storage/sfx/2568/2568.wav" type="audio/wav" />
+    </audio>
+
+    <div class="modal-backdrop ai-api-backdrop" id="aiApiSettingsModal" hidden>
+      <section class="ai-api-modal" aria-modal="true" aria-labelledby="aiApiSettingsTitle" role="dialog">
+        <div class="ai-api-modal-head" id="aiApiSettingsDragHandle">
+          <h3 id="aiApiSettingsTitle">AI设置</h3>
+          <button class="ai-api-modal-close" id="aiApiSettingsClose" type="button" aria-label="关闭AI设置">×</button>
+        </div>
+        <form class="ai-api-form" id="aiApiSettingsForm" action="javascript:void(0)" autocomplete="off">
+          <div class="ai-assistant-head ai-settings-head">
+            <div class="ai-settings-provider-row">
+              <div class="ai-provider-switch" role="radiogroup" aria-label="模型来源单选">
+                <button class="is-active" id="aiProviderOllama" type="button" data-provider="ollama" role="radio" aria-checked="true">
+                  <span class="ai-provider-radio" aria-hidden="true"></span>
+                  <span>本地Ollama</span>
+                </button>
+                <button id="aiProviderNetwork" type="button" data-provider="network" role="radio" aria-checked="false">
+                  <span class="ai-provider-radio" aria-hidden="true"></span>
+                  <span>网络模型</span>
+                </button>
+              </div>
+              <div class="ai-head-actions">
+                <div class="ai-connection-pill" id="aiConnectionPill">
+                  <span class="indicator is-idle" id="aiConnectionIndicator"></span>
+                  <span id="aiConnectionText">待连接</span>
+                </div>
+                <button id="aiTestConnectionButton" type="button">测试连接</button>
+              </div>
+            </div>
+          </div>
+          <div class="ai-model-bar" id="aiModelBar">
+            <label class="ai-field" id="aiOllamaModelField">
+              <span>模型</span>
+              <select id="aiOllamaModelSelect" aria-label="选择本地模型">
+                <option value="">加载中...</option>
+              </select>
+            </label>
+          </div>
+          <section class="ai-system-prompt" id="aiSystemPromptSection">
+            <label class="ai-system-toggle" for="aiSystemPromptToggle">
+              <input id="aiSystemPromptToggle" type="checkbox" checked />
+              <span>启用系统提示词</span>
+            </label>
+            <textarea
+              id="aiSystemPromptInput"
+              placeholder="可选：设置系统提示词来定义AI行为。"
+            >你是一个高效、可靠、注重可执行结果的AI助手。请优先给出可落地方案，并保持回答准确、清晰、结构化。</textarea>
+          </section>
+          <div id="aiNetworkApiGroup" hidden>
+            <p class="ai-api-tip">网络API设置</p>
+            <div class="ai-network-profile-tools" role="group" aria-label="网络模型配置管理">
+              <label>
+                <span>已保存配置</span>
+                <select id="aiApiProfileSelect" aria-label="选择网络配置"></select>
+              </label>
+              <div class="ai-network-profile-actions">
+                <button id="aiApiProfileCreateButton" type="button">新建</button>
+                <button id="aiApiProfileDeleteButton" type="button">删除</button>
+              </div>
+            </div>
+            <label>
+              <span>配置名称</span>
+              <input id="aiApiProfileNameInput" type="text" placeholder="例如 OpenAI / DeepSeek / 自建网关" />
+            </label>
+            <label>
+              <span>Base URL</span>
+              <input id="aiApiBaseUrlInput" type="url" placeholder="例如 https://api.openai.com/v1" />
+            </label>
+            <label>
+              <span>API Key</span>
+              <input id="aiApiKeyInput" type="password" placeholder="输入API Key" />
+            </label>
+            <label>
+              <span>模型名称</span>
+              <input id="aiApiNetworkModelInput" type="text" placeholder="例如 qwen-plus / deepseek-chat / gpt-4o-mini" />
+            </label>
+            <p class="ai-api-tip">提示：本页面自动保存设置。测试连接请使用顶部“测试连接”按钮。</p>
+          </div>
+          <p class="ai-api-status" id="aiApiStatus" hidden></p>
+        </form>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" id="backgroundModal" hidden>
+      <div class="modal">
+        <div class="modal-head">
+          <h3>背景设置</h3>
+          <button id="closeBackgroundModal" aria-label="关闭背景设置">×</button>
+        </div>
+        <p>选择你偏好的视觉氛围（自动保存）。</p>
+        <div class="bg-options">
+          <button class="bg-option" data-bg="mist">
+            <span class="swatch mist"></span>
+            <strong>雾青</strong>
+          </button>
+          <button class="bg-option" data-bg="qinglv">
+            <span class="swatch qinglv"></span>
+            <strong>青绿</strong>
+          </button>
+          <button class="bg-option" data-bg="dawn">
+            <span class="swatch dawn"></span>
+            <strong>晨曦</strong>
+          </button>
+          <button class="bg-option" data-bg="mihuang">
+            <span class="swatch mihuang"></span>
+            <strong>米黄</strong>
+          </button>
+          <button class="bg-option" data-bg="hailan">
+            <span class="swatch hailan"></span>
+            <strong>海蓝</strong>
+          </button>
+          <button class="bg-option" data-bg="huifen">
+            <span class="swatch huifen"></span>
+            <strong>灰粉</strong>
+          </button>
+          <button class="bg-option" data-bg="gradient">
+            <span class="swatch gradient"></span>
+            <strong>渐变</strong>
+          </button>
+          <button class="bg-option is-selected" data-bg="flow-gradient">
+            <span class="swatch flow-gradient"></span>
+            <strong>流动渐变</strong>
+          </button>
+        </div>
+        <div class="bg-image-tools">
+          <h4>图片背景</h4>
+          <div class="bg-image-mode">
+            <span>显示方式</span>
+            <div class="bg-image-mode-options" role="radiogroup" aria-label="图片背景显示方式">
+              <label class="bg-image-mode-option" for="bgImageModeFill">
+                <input id="bgImageModeFill" name="bgImageFitMode" type="radio" value="fill" checked />
+                <span>填充</span>
+              </label>
+              <label class="bg-image-mode-option" for="bgImageModeFit">
+                <input id="bgImageModeFit" name="bgImageFitMode" type="radio" value="fit" />
+                <span>适应</span>
+              </label>
+              <label class="bg-image-mode-option" for="bgImageModeCenter">
+                <input id="bgImageModeCenter" name="bgImageFitMode" type="radio" value="center" />
+                <span>居中</span>
+              </label>
+            </div>
+          </div>
+          <div class="bg-image-field">
+            <label class="bg-image-source-label" for="bgImageSourceLocal">
+              <input id="bgImageSourceLocal" name="bgImageSourceMode" type="radio" value="local" checked />
+              <span>本地图片</span>
+            </label>
+            <div class="bg-image-file-row">
+              <input id="bgImageFileInput" type="file" accept="image/*" />
+              <button id="bgImageFileApply" type="button">应用</button>
+            </div>
+          </div>
+          <div class="bg-image-field">
+            <label class="bg-image-source-label" for="bgImageSourceUrl">
+              <input id="bgImageSourceUrl" name="bgImageSourceMode" type="radio" value="url" />
+              <span>网络图片</span>
+            </label>
+            <div class="bg-image-url-row">
+              <input id="bgImageUrlInput" type="url" placeholder="https://example.com/background.jpg" />
+              <button id="bgImageUrlApply" type="button">应用</button>
+            </div>
+          </div>
+          <div class="bg-image-actions">
+            <button id="bgImageClear" type="button">清除图片背景</button>
+            <small id="bgImageStatus">未启用图片背景</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./vendor/lunar.js"></script>
+    <script src="./vendor/marked.min.js"></script>
+    <script src="./node_modules/katex/dist/katex.min.js"></script>
+    <script src="./node_modules/katex/dist/contrib/mhchem.min.js"></script>
+    <script src="./node_modules/katex/dist/contrib/auto-render.min.js"></script>
+    <script src="./node_modules/@highlightjs/cdn-assets/highlight.min.js"></script>
+    <script src="./app.js?v=20260315-11"></script>
+  </body>
+</html>

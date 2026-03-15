@@ -1,0 +1,52 @@
+{
+  "runAt": "2026-03-14T13:56:37.696Z",
+  "appUrl": "http://127.0.0.1:9910/",
+  "accountUsername": "fav_layout_6595670",
+  "screenshot": "E:\\study\\Trae\\991x\\artifacts\\favorites-layout-acceptance\\20260314-215635\\favorites-layout-desktop.png",
+  "metrics": {
+    "currentView": "favorites",
+    "columnCount": 5,
+    "visibleRows": 6,
+    "rowHeight": 72,
+    "rowGap": 8,
+    "totalCards": 31,
+    "clientHeight": 472,
+    "scrollHeight": 565,
+    "hasVerticalScrollbar": true,
+    "overflowY": "auto",
+    "expectedVisibleCount": 30
+  },
+  "assertions": [
+    {
+      "name": "当前视图应为 favorites",
+      "passed": true,
+      "detail": "currentView=favorites"
+    },
+    {
+      "name": "桌面列数应为 5",
+      "passed": true,
+      "detail": "columnCount=5"
+    },
+    {
+      "name": "可视行数应为 6",
+      "passed": true,
+      "detail": "visibleRows=6"
+    },
+    {
+      "name": "导入后卡片数量至少 31",
+      "passed": true,
+      "detail": "totalCards=31"
+    },
+    {
+      "name": "可视容量应为 30（5x6）",
+      "passed": true,
+      "detail": "expectedVisibleCount=30"
+    },
+    {
+      "name": "超过 30 条后应出现纵向滚动",
+      "passed": true,
+      "detail": "clientHeight=472, scrollHeight=565, overflowY=auto"
+    }
+  ],
+  "allPassed": true
+}

@@ -1,0 +1,30 @@
+{
+  "applications": [
+    {
+      "id": "app-689657277684453dbf",
+      "name": "Cherry Studio",
+      "path": "C:\\Program Files\\Cherry Studio\\Cherry Studio.exe",
+      "createdAtMs": 1772847320085
+    }
+  ],
+  "files": [
+    {
+      "id": "file-b765afd606304ee59b",
+      "name": "金鱼",
+      "path": "G:\\视频\\创作\\unwatermark_纸片幻化成蓝白色金鱼2.mp4",
+      "createdAtMs": 1772847862149
+    },
+    {
+      "id": "file-ca60017a824e4bd7bd",
+      "name": "视频教程",
+      "path": "G:\\视频\\教程\\Google AI Studio最全教程.mp4",
+      "createdAtMs": 1772847792310
+    },
+    {
+      "id": "file-693b72f3ce594cc3b5",
+      "name": "招生信息",
+      "path": "G:\\近年在广东省招生的高校相关信息汇总表.xlsx",
+      "createdAtMs": 1772847749326
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "runAt": "2026-03-15T01:34:44.969Z",
+  "url": "http://127.0.0.1:9910/",
+  "checkpoints": [
+    {
+      "point": "引擎下拉键盘交互",
+      "expected": "支持 Enter 打开、方向键切换、Enter 选择后关闭",
+      "actual": "选项数=3；切换前=Bing，切换后=Google，已关闭=true",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\search-page-acceptance\\20260315-093439-desktop\\01-engine-keyboard.png",
+      "passed": true
+    },
+    {
+      "point": "空关键词提示",
+      "expected": "网络模式空关键词时显示 notice，且不展示结果面板",
+      "actual": "notice=请输入关键词再搜索。；结果面板可见=false",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\search-page-acceptance\\20260315-093439-desktop\\02-empty-state.png",
+      "passed": true
+    },
+    {
+      "point": "网络搜索无 loading 面板",
+      "expected": "网络搜索触发后不显示结果面板 loading 态",
+      "actual": "loading可见=false；结果面板可见=false",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\search-page-acceptance\\20260315-093439-desktop\\03-loading-state.png",
+      "passed": true
+    },
+    {
+      "point": "设置面板焦点约束",
+      "expected": "Tab 焦点不逃逸，Esc 关闭后焦点回到设置按钮",
+      "actual": "焦点在面板内=true，焦点回归=true",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\search-page-acceptance\\20260315-093439-desktop\\04-settings-open-focus-trap.png",
+      "screenshot2": "E:\\study\\Trae\\991x\\artifacts\\search-page-acceptance\\20260315-093439-desktop\\05-settings-close-focus-return.png",
+      "passed": true
+    },
+    {
+      "point": "本地索引取消与结果增强",
+      "expected": "支持取消索引；结果高亮关键词并展示命中来源标签",
+      "actual": "status=索引已取消：已处理 50 个文件，全文 50 个（用时 0 秒）; indexed=50; cancelDisabled=true; highlights=4; tags=名称命中、路径命中、正文命中",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\search-page-acceptance\\20260315-093439-desktop\\06-local-cancel-highlight.png",
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "dialogLog": []
+}

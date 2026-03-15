@@ -1,0 +1,85 @@
+{
+  "runAt": "2026-03-14T12:52:41.330Z",
+  "appUrl": "http://127.0.0.1:9910/",
+  "accountUsername": "iso_2756634",
+  "screenshotDir": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "runTag": "mobile-390x844",
+  "allPassed": true,
+  "checkpointCount": 10,
+  "checkpoints": [
+    {
+      "point": "网站区入口",
+      "expected": "顶部标题为“网站收藏”，并显示登录入口",
+      "actual": "标题正确，网站区已打开",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\01-website-view-before-login.png",
+      "passed": true
+    },
+    {
+      "point": "登录解锁",
+      "expected": "注册成功后网站区工作台可见",
+      "actual": "注册账号 iso_2756634 成功，工作台已显示",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\02-after-register-unlocked.png",
+      "passed": true
+    },
+    {
+      "point": "网站区新增",
+      "expected": "网站区出现“隔离站点A”卡片",
+      "actual": "新增成功并可见",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\03-website-added-item.png",
+      "passed": true
+    },
+    {
+      "point": "网络内容区入口",
+      "expected": "顶部标题为“网络内容”与副标题“收藏喜欢的网络内容”",
+      "actual": "标题与副标题正确",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\04-favorites-view-initial.png",
+      "passed": true
+    },
+    {
+      "point": "网络内容区新增",
+      "expected": "网络内容区出现“隔离内容A”卡片",
+      "actual": "新增成功并可见",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\05-favorites-added-item.png",
+      "passed": true
+    },
+    {
+      "point": "网站区回切隔离",
+      "expected": "网站区只看到网站数据，不出现网络内容数据",
+      "actual": "当前标题: 隔离站点A",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\06-back-to-website-isolation.png",
+      "passed": true
+    },
+    {
+      "point": "网络内容区回切隔离",
+      "expected": "网络内容区只看到自身数据，不出现网站区数据",
+      "actual": "当前标题: 隔离内容A",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\07-back-to-favorites-isolation.png",
+      "passed": true
+    },
+    {
+      "point": "跨区导入阻断（网络内容区）",
+      "expected": "网络内容区不能导入网站收藏导出JSON",
+      "actual": "当前标题: 隔离内容A",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\08-cross-import-blocked-favorites.png",
+      "passed": true
+    },
+    {
+      "point": "跨区导入阻断（网站区）",
+      "expected": "网站区不能导入网络内容导出JSON",
+      "actual": "当前标题: 隔离站点A",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\09-cross-import-blocked-website.png",
+      "passed": true
+    },
+    {
+      "point": "导出命名隔离",
+      "expected": "网站区与网络内容区导出文件名前缀不同",
+      "actual": "website: website-collection-iso_2756634-20260314-205241.json | favorites: favorites-content-iso_2756634-20260314-205241.json",
+      "screenshot": "E:\\study\\Trae\\991x\\artifacts\\website-favorites-ui-isolation\\20260314-205236-mobile-390x844\\10-export-filename-patterns.png",
+      "passed": true
+    }
+  ]
+}
