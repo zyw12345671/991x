@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "title": "工具",
+      "items": [
+        { "name": "991Blog", "url": "https://991-blog.pages.dev/", "desc": "站长博客", "enabled": true },
+        { "name": "电子琴", "url": "https://991-dianziqin.pages.dev/", "desc": "多种音效的电子琴", "enabled": true },
+        { "name": "颜色选择器", "url": "https://991color-picker.pages.dev/", "desc": "多功能颜色选择器", "enabled": true },
+        { "name": "图片分析工具", "url": "https://image-analysis.pages.dev/", "desc": "图片分析工具", "enabled": true },
+        { "name": "991图片压缩工具", "url": "https://991-tuya.pages.dev/", "desc": "图片压缩工具", "enabled": true },
+        { "name": "991图片加密", "url": "https://tupianjiami.pages.dev/", "desc": "图片加密工具", "enabled": true },
+        { "name": "991Gallery", "url": "https://991gallery.pages.dev/", "desc": "图片画廊", "enabled": true },
+        { "name": "991二维码生成器", "url": "https://991qrcode.pages.dev/", "desc": "二维码生成器", "enabled": true },
+        { "name": "991Markdown", "url": "https://991markdown.pages.dev/", "desc": "Markdown编辑器", "enabled": true },
+        { "name": "MindMap", "url": "https://991mindmap.pages.dev/", "desc": "思维导图制作工具", "enabled": true },
+        { "name": "991Mind", "url": "https://991mind.pages.dev/", "desc": "思维导图制作工具", "enabled": true },
+        { "name": "991看图写作", "url": "https://kantuxiezuo.pages.dev/", "desc": "看图写作工具", "enabled": true },
+        { "name": "文鉴", "url": "https://991wenjian.pages.dev/", "desc": "作文鉴定工具", "enabled": true },
+        { "name": "随手记", "url": "https://suishouji.pages.dev/", "desc": "无需登录的简约记事本", "enabled": true },
+        { "name": "图标生成器 Pro", "url": "https://iconpro.pages.dev/", "desc": "图标生成器", "enabled": true },
+        { "name": "学英语词汇", "url": "https://xueyingyu.pages.dev/", "desc": "学英语词汇", "enabled": true },
+        { "name": "991听", "url": "https://991ting.pages.dev/", "desc": "本地音乐播放器", "enabled": true },
+        { "name": "991看", "url": "https://991kan.pages.dev/", "desc": "本地视频播放器", "enabled": true },
+        { "name": "点链", "url": "https://dianlian-nav.pages.dev/", "desc": "网址收藏工具", "enabled": true },
+        { "name": "Z-Image Turbo", "url": "https://z-image-turbo-ai.pages.dev/", "desc": "文生图工具", "enabled": true },
+        { "name": "Qwen Image Edit", "url": "https://qwen-image-edit-cxt.pages.dev/", "desc": "图生图工具", "enabled": true },
+        { "name": "视频分析助手", "url": "https://shipinfenxi.pages.dev/", "desc": "视频分析助手", "enabled": true },
+        { "name": "AI绘画提示词生成器", "url": "https://drawing-prompt-generator.pages.dev/", "desc": "AI绘画提示词生成器", "enabled": true },
+        { "name": "无限旅程", "url": "https://lvcheng.pages.dev/", "desc": "模拟故事旅程", "enabled": true },
+        { "name": "991中英翻译助手", "url": "https://celebrated-custard-7a2121.netlify.app/", "desc": "中英翻译工具", "enabled": true },
+        { "name": "991网址导航", "url": "https://prismatic-sprinkles-2f2c01.netlify.app/", "desc": "网址导航", "enabled": true }
+      ]
+    }
+  ]
+}
